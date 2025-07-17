@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devi Anjani - Tentang Saya</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logoe.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .warnabg {
+        color: #000 !important;
+        background-color: #f1f1f1 !important;
+      }
+
+      .footerbawah {
+        color: #fff !important;
+        background-color: #181725 !important;
+      }
+
+      .about-section {
+        padding: 40px 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h2 {
+        color: #333;
+        border-bottom: 2px solid #ff9900; /* Garis bawah untuk judul */
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+
+      /* Profile Section */
+      .profile-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ff9900;
+        flex-shrink: 0;
+      }
+
+      .profile-text {
+        flex-grow: 1;
+      }
+
+      .profile-text p {
+        margin-bottom: 10px;
+      }
+
+      /* Timeline Styling (for Education & Experience) */
+      .timeline {
+        position: relative;
+        padding-left: 20px;
+        border-left: 2px solid #ddd;
+      }
+
+      .timeline-item {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #ff9900;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        z-index: 1;
+      }
+
+      .timeline-item h4 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .timeline-item p {
+        margin-bottom: 5px;
+      }
+
+      /* Passion Story Section */
+      .passion-story {
+        text-align: justify;
+      }
+
+      .passion-story .story-image {
+        width: 100%;
+        max-width: 400px;
+        height: 500px;
+        display: flex;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .profile-content {
+          flex-direction: column;
+          align-items: center;
+        }
+        .profile-pic {
+          margin-bottom: 20px;
+        }
+        .timeline {
+          padding-left: 10px;
+        }
+        .timeline-item::before {
+          left: -18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="warnabg">
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <img src="assets/img/logoe.png" width="53px" />
+      </div>
+      <div class="tombolkanan">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="tombolmenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">Tentang Saya</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+
+    <div class="content" style="max-width: 1600px">
+      <div class="row padding border">
+        <div class="col l12">
+          <main class="container about-section">
+            <section id="profil-singkat" class="card">
+              <h2>Profil Singkat</h2>
+              <div class="profile-content">
+                <img
+                  src="assets/img/back.jpg"
+                  alt="Foto Davi Anjani"
+                  class="profile-pic"
+                />
+                <div class="profile-text">
+                  <p>
+                    Halo! Saya <b>Devi Anjani</b> . Saya adalah seorang Suka
+                    membaca yang bersemangat dalam penciptaan karya.
+                  </p>
+                  <p>
+                    Saya memiliki keahlian dalam penulisan kreatif, penyuntingan
+                    naskah, analisis sastra, riset mendalam dan minat yang
+                    mendalam pada fiksi ilmiah, sejarah, filosofi, puisi, seni
+                    digital.
+                  </p>
+                  <p>
+                    Melalui website ini, saya berharap dapatberbagi sudut
+                    pandang unik saya, menginspirasi orang lain, membangun
+                    komunitas pembaca dan penulis.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="riwayat" class="card">
+              <h2>Riwayat Pendidikan & Pengalaman Profesional</h2>
+
+              <h3>Pendidikan</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h4>Universitas Terbuka - 2021 Sampai 2025</h4>
+                  <p>
+                    <strong>Sarjana Ilmu perpustakaan,</strong>
+                  </p>
+                  <p>
+                    Lulus dengan predikat cum laude, fokus pada sastra
+                    kontemporer dan teori kritik.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <h4>SMK Negeri Tugu Mulyo - 2018 Sampai 2021</h4>
+                </div>
+                <div class="timeline-item">
+                  <h4>SMP Negeri B. Srikaton - 2015 Sampai 2018</h4>
+                </div>
+                <div class="timeline-item">
+                  <h4>SD Negeri 1 Widodo - 2009 Sampai 2015</h4>
+                </div>
+                <div class="timeline-item">
+                  <h4>TK Aisyiah Bustanul Athfal - 2008 Sampai 2009</h4>
+                </div>
+              </div>
+
+              <h3>Pengalaman Profesional</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h4>
+                    Membantu Saudara sebagai pustakawan di Universitas Musi
+                    Rawas
+                  </h4>
+                  <p>
+                    Saya bertanggung jawab mengelola atau membantu saudara
+                    sebagai pustakawan
+                  </p>
+                </div>
+                <!-- <div class="timeline-item">
+                  <h4>
+                    [Jabatan Lain] di [Nama Perusahaan/Organisasi] - [Bulan
+                    Tahun Mulai] - [Bulan Tahun Selesai]
+                  </h4>
+                  <p>[Deskripsi singkat tambahan jika relevan.]</p>
+                </div>
+                <div class="timeline-item">
+                  <h4>
+                    Penulis Independen/Freelance - [Bulan Tahun Mulai] -
+                    Sekarang
+                  </h4>
+                  <p>
+                    Menulis artikel, esai, dan cerita pendek untuk berbagai
+                    platform dan publikasi online, termasuk [sebutkan beberapa
+                    contoh jika ada].
+                  </p>
+                </div> -->
+              </div>
+            </section>
+
+            <section id="cerita-passion" class="card">
+              <h2>Cerita Singkat Saya</h2>
+              <div class="passion-story">
+                <img
+                  src="assets/img/back.jpg"
+                  alt="Ilustrasi Perjalanan Membaca dan Menulis"
+                  class="story-image"
+                  style="object-fit: cover"
+                />
+                <p>
+                  Saya menyelesaikan pendidikan SMK dengan jurusan rekayasa
+                  perangkat lunak pada tahun 2021. Setelah itu, saya memilih
+                  untuk melanjutkan pendidikan di Universitas Terbuka karena
+                  ingin berkuliah sambil bekerja. Di Universitas Terbuka saya
+                  mengambil jurusan ilmu perpustakaan karena melihat peluang
+                  pekerjaan yang besar setelah lulus.
+                </p>
+                <p>
+                  Selama masa kuliah, saya juga melanjutkan usaha keluarga di
+                  pasar. Pekerjaan ini tidak membuat tugas kuliah saya
+                  terbengkalai. Selain itu, untuk lebih mendalami bidang yang
+                  saya pilih, saya mencoba membantu pekerjaan saudara saya yang
+                  berprofesi sebagai pustakawan di perpustakaan Universitas Musi
+                  Rawas.
+                </p>
+                <p>
+                  Di saat libur kuliah, saya mengisi waktu dengan mengikuti
+                  beberapa kelas menulis online. Pengalaman kuliah sambil
+                  bekerja ini membuat saya lebih terampil dalam manajemen waktu,
+                  berpikir kritis, dan menghasilkan karya.
+                </p>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="container footerbawah"
+      style="padding-top: 15px; padding-bottom: 15px"
+    >
+      <div class="container">
+        <p class="text-muted small">Devi Anjani - 2025</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

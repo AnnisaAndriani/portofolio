@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devi Anjani - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logoe.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        .warnabg {
+            color: ##fec7d7 !important;
+            background-color: #f1f1f1 !important;
+        }
+        
+        .footerbawah {
+            color: #fff !important;
+            background-color: #181725 !important;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .card {
+      background: linear-gradient(135deg, #fec7d7, #ffb6d9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      color: #fff;
+        width: 100%;
+  height: 200px;
+    }
+        .nav {
+      background-color: #fec7d7;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav img {
+      height: 50px;
+    }
+
+    .tombolmenu a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .tombolmenu a:hover,
+    .tombolmenu a.active {
+      color: #fff;
+      background-color: #e26a94;
+      padding: 6px 12px;
+      border-radius: 10px;
+    }
+
+    .tombolkanan {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .tombolmenu {
+        display: none;
+        flex-direction: column;
+        background-color: #fec7d7;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        gap: 10px;
+      }
+
+      #nav-check:checked ~ .tombolmenu {
+        display: flex;
+      }
+
+      .tombolkanan {
+        display: block;
+        cursor: pointer;
+      }
+
+      .tombolkanan span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+    }
+
+    #nav-check {
+      display: none;
+    }
+     .hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  }
+  .timeline {
+    border-left: 4px solid #ffb3c6;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+
+  .timeline-item {
+    position: relative;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff6ec7;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #ffb3c6;
+  }
+  </style>
+</head>
+
+<body class="warnabg">
+  <div class="nav">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-header">
+      <img src="assets/img/logoe.png" alt="Logo" />
+    </div>
+
+    <div class="tombolkanan">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="tombolmenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Tentang Saya</a>
+      <a href="portofolio.html">Pendidikan</a>
+      <a href="blog.html">Portofolio</a>
+         <a href="kontak.html">Kontak</a>
+    </div>
+  </div>
+      
+<main class="container">
+  <div class="row align-items-center justify-content-center">
+    <!-- KIRI: Foto Saja -->
+<div class="col-md-5 text-center d-flex justify-content-center align-items-center" style="min-height: 450px;">
+  <img src="assets/img/foto3.jpg" alt="Foto Devi Anjani" class="img-fluid rounded-circle" style="width: 250px; height: 250px; object-fit: cover; box-shadow: 0 0 20px rgba(255, 110, 199, 0.4);">
+</div>
+
+
+    <!-- KANAN: Card Portofolio -->
+<div class="col-md-7">
+<div class="card p-5 d-flex justify-content-center align-items-center text-center">
+    <div class="card-body">
+      <h1 class="text-white fw-bold mb-3" style="font-size: 2.5rem;">Shin Eun-soo</h1>
+      <h5 class="text-white fw-semibold" style="font-size: 1.25rem;">
+        Welcome to My Portofolio Website
+      </h5>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+<!--  -->
+      <!-- SECTION: Tentang Saya -->
+<section class="py-5" style="background: linear-gradient(135deg, #ffe0ec, #fad0c4);">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Kolom Kiri: Teks -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold mb-3" style="color: #d63384;">✨ Tentang Saya</h2>
+        <p style="text-align: justify; font-size: 1.1rem; line-height: 1.8;">
+  Halo! Saya <span style="color: #c9184a; font-weight: bold;">Shin Eun-soo</span>, aktris dan model asal Korea Selatan yang memulai debut akting saya pada usia muda. Saya dikenal publik lewat peran utama dalam film <i>"Vanishing Time: A Boy Who Returned"</i> pada tahun 2016.
+  <br /><br />
+  Di luar dunia akting, saya juga aktif di bidang tari dan seni pertunjukan lainnya. Dengan semangat belajar dan kerja keras, saya terus mengembangkan diri untuk menghadirkan karya-karya yang berkualitas dan bermakna bagi penonton.
+</p>
+
+      </div>
+
+      <!-- Kolom Kanan: Foto -->
+      <div class="col-md-6 text-center">
+        <div style="
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          " class="hover-scale">
+          <img src="assets/img/foto1.jpg"
+               alt="Foto Tentang Saya"
+               style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<section id="riwayat" class="py-5" style="background-color: #ffffff;">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5" style="color: #c9184a;">
+      Riwayat Pendidikan & Pengalaman Profesional
+    </h2>
+
+<!-- Pendidikan -->
+<h4 class="fw-semibold text-dark mb-3">🎓 Pendidikan</h4>
+<div class="timeline">
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-primary">School of Performing Arts Seoul (SOPA) <span class="text-muted">| 2020 - 2023</span></h5>
+    <p class="mb-1"><strong>Jurusan Seni Pertunjukan</strong></p>
+    <p class="text-muted">Mengembangkan keterampilan akting, tari, dan ekspresi artistik. Lulus dengan pencapaian luar biasa dalam bidang seni panggung.</p>
+  </div>
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-primary">Sekolah Menengah di Incheon <span class="text-muted">| 2017 - 2020</span></h5>
+    <p class="text-muted">Menjalani pendidikan umum sambil memulai karier sebagai aktris remaja di bawah agensi JYP Entertainment.</p>
+  </div>
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-primary">Sekolah Dasar di Incheon <span class="text-muted">| 2011 - 2017</span></h5>
+    <p class="text-muted">Masa awal yang penuh prestasi akademik dan kegiatan seni, menjadi pondasi awal dalam dunia hiburan.</p>
+  </div>
+
+</div>
+
+
+    <!-- Pengalaman -->
+<h4 class="fw-semibold text-dark mt-5 mb-3">💼 Pengalaman Profesional</h4>
+<div class="timeline">
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-success">
+      Pemeran Utama – Film “Vanishing Time: A Boy Who Returned”
+    </h5>
+    <p class="text-muted mb-0">
+      Debut akting sebagai pemeran utama wanita di usia 14 tahun, mendapat pujian atas penampilan emosional dan kedalaman karakter.
+    </p>
+  </div>
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-success">
+      Aktris – Beberapa Drama & Web Series (2017 - Sekarang)
+    </h5>
+    <p class="text-muted mb-0">
+      Berpartisipasi dalam berbagai drama TV, iklan, serta proyek web series Korea Selatan. Dikenal karena wajah ekspresif dan kemampuan adaptasi peran.
+    </p>
+  </div>
+
+  <div class="timeline-item mb-4 p-4 bg-white rounded shadow">
+    <h5 class="fw-bold text-success">
+      Model – JYP Entertainment Trainee (2014 - 2019)
+    </h5>
+    <p class="text-muted mb-0">
+      Bergabung dengan JYP sebagai trainee multi-talenta, mempelajari akting, tari, modeling, dan vokal. Muncul di beberapa iklan & majalah mode remaja.
+    </p>
+  </div>
+
+</div>
+
+</section>
+<!-- portofolio -->
+<section id="portofolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5" style="color: #c9184a;">Portofolio</h2>
+
+    <div class="row g-4">
+      <!-- Foto 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama6.jpg" alt="Eunsoo 1" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama4.jpg" alt="Eunsoo 2" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama3.jpg" alt="Eunsoo 3" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+
+      <!-- Foto 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama1.jpg" alt="Eunsoo 4" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+
+      <!-- Foto 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama2.jpg" alt="Eunsoo 5" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+
+      <!-- Foto 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item shadow rounded overflow-hidden">
+          <img src="assets/img/kdrama5.jpg" alt="Eunsoo 6" class="img-fluid w-100" style="object-fit: cover; height: 450px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer
+      class="container footerbawah"
+      style="padding-top: 15px; padding-bottom: 15px"
+    >
+      <div class="container">
+        <p class="text-muted small">Devi Anjani - 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>
